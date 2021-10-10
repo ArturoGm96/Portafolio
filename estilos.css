@@ -491,7 +491,7 @@ img{
 @media screen and (max-width: 480px) {
 
     #project{
-        height: 50vh;
+        height: 60vh;
     }
 
     .projectT{
@@ -506,7 +506,6 @@ img{
         flex-direction: column;
         align-items: center;
         justify-content: start;
-        background-color: chartreuse;
     }
 
     .pj a{
