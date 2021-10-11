@@ -383,12 +383,22 @@ ul.show{
 img{
     height: 140px;
     width: 250px;
-    border: solid 2px #fff;
+    border: solid 3px #fff;
 }
 
 .pj a{
     text-decoration: none;
     color: #fff;
+}
+
+.pj a:hover{
+    text-decoration: none;
+    color: #fff;
+}
+
+img:hover{
+    border: #000 3px solid;
+    transition: 1.8s;
 }
 
 @media screen and (min-width: 1921px) {
