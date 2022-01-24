@@ -4,94 +4,111 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="estilos.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="iconos.css">
-    <link rel="shortcut icon" href="img/icono.jpeg" type="image/x-icon">
     <script src="https://kit.fontawesome.com/944182e0f2.js" crossorigin="anonymous"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
-    <script src="./logica.js" defer></script>
     <title>Arturo Granados Morales</title>
+    <link rel="shortcut icon" href="./img/icono.jpeg" type="image/x-icon">
 </head>
 <body>
-    <nav class="menu">
-        <label class="name">Arturo Granados Morales</label>
-        <ul class="list">
-            <li><a href="#about"><i class="icon-home"></i>  HOME</a></li>
-            <li><a href="#about"><i class="icon-user"></i>  ABOUT ME</a></li>
-            <li><a href="#skill"><i class="icon-trophy"></i>  SKILLS</a></li>
-            <li><a href="#project"><i class="icon-folder-open"></i>  PROJECTS</a></li>
-            <li><a href="#contact"><i class="icon-envelop"></i>  CONTACT</a></li>
-        </ul>
-        <span class="btnMenu">
-            <i class="icon-menu"></i>
-        </span>
-    </nav>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <div id="page-container">
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Menu</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#about"><i class="icon-home"></i> Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#skill"><i class="icon-trophy"></i>  Skills</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#project"><i class="icon-folder-open"></i> Projects</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact"><i class="icon-envelop"></i> Conctact</a>
+              </li>
+            </ul>
+            <span class="title-text">
+              My Portfolio
+            </span>
+          </div>
+        </div>
+      </nav>
 
-    <div id="about">
-        <label class="aboutT" for="">ABOUT ME</label>
-        <p class="info">I consider myself an honest person, of good principles, a dreamer and with many desires 
-            to improve in the personal and professional sphere, I have a great commitment to my 
-            work and education. Currently I have completed my diploma in Computer Engineering and 
-            I am studying the baccalaureate level in this same career. From a young age I have had 
-            to work and study to meet the needs of my children and home. My greatest desire is to 
-            belong to a company where I can show my skills and make me grow more in the workplace.</p>
-    </div>
-    
-    <div id="skill">
-        <label class="skillT" for="">SKILLS</label>
-        <div class="skC">
-            <span class="sk">C++</span>
-            <span class="sk">Java</span>
-            <span class="sk">C#</span>
-            <span class="sk">JavaScript</span>
-            <span class="sk">HTML5</span>
-            <span class="sk">CSS3</span>
-            <span class="sk">BootStrap</span>
-            <span class="sk">SQL Server</span>
-            <span class="sk">MySQL</span>
-            <span class="sk">Excel</span>
+      <div id="about">
+        <div id="presentation">
+          <h1>Hello, I'm Arturo Granados Morales</h1>
+          <h2>a web developer</h2>
+          <i class="icon-laptop"></i>
         </div>
         
-    </div>
-    <div id="project">
-        <label class="projectT" for="">PROJECTS</label>
-        <div class="projectC">
-            <div class="pj"><a href="https://arturogm96.github.io/Tributo/" target="_blank">Page Tribute<img src="img/tributo.PNG"></a></div>
-            <div class="pj"><a href="https://arturogm96.github.io/Comprobador-de-palindromos/" target="_blank">Page Of Palindromes<img src="img/palindromos.PNG"></a></div>
-            <div class="pj"><a href="https://arturogm96.github.io/La-Pluma/"target="_blank">Page The Plume<img src="img/pluma.PNG"></a></div>
-        </div>
-    </div>
+      </div>
 
-    <div id="contact">
-        <label class="contactT" for="">CONTACT</label>
-        <div id="arrowAnim">
-            <div class="arrowSliding">
-              <div class="arrow"></div>
-            </div>
-            <div class="arrowSliding delay1">
-              <div class="arrow"></div>
-            </div>
-            <div class="arrowSliding delay2">
-              <div class="arrow"></div>
-            </div>
-            <div class="arrowSliding delay3">
-              <div class="arrow"></div>
-            </div>
+      <div id="skill">
+          <h1><u>Skills</u></h1>
+          <div id="content-skill">
+              <img src="./img/html.png" alt="">
+              <img src="./img/css.png" alt="">
+              <img src="./img/js.png" alt="">
+              <img src="./img/bootstrap.png" alt="">
+              <img src="./img/jquery.png" alt="">
+              <img src="./img/sass.png" alt="">
+              <img src="./img/cplusplus.png" alt="">
+              <img src="./img/java.png" alt="">
+              <img src="./img/csharp.png" alt="">
+              <img src="./img/sqlserver.png" alt="">
+              <img src="./img/mysql.png" alt="">
+              <img src="./img/excel.png" alt="">       
           </div>
-    </div>
+          
+      </div>
 
-    <div id="container">
+      <div id="project">
+        <h1><u>Projects</u></h1>
+        <div id="container-projects">
+          <div class="links">
+            <h6>La Pluma</h6>
+            <a target="_blank" href="https://arturogm96.github.io/La-Pluma/"><img class="img-project" src="./img/pluma.PNG" alt="La pluma"></a>
+          </div>
 
-        <div id="containerIcon">
-            <a href="mailto:arturo96gm@gmail.com" target="_blank">
-                <div class="iconos"><i class="far fa-envelope"></i></div>
-            </a>
-            <a href="https://github.com/ArturoGm96" target="_blank">
-                <div class="iconos"><i class="fab fa-github"></i></div>
-            </a>
-            <a href="https://www.linkedin.com/in/arturo-granados-morales/" target="_blank">
-                <div class="iconos"><i class="fab fa-linkedin"></i></div>
-            </a>
+          <div class="links">
+            <h6>Comprobador de Palindromos</h6>
+            <a target="_blank" href="https://arturogm96.github.io/Comprobador-de-palindromos/"><img class="img-project" src="./img/palindromos.PNG" alt="Comprobador de palindromos"></a>
+          </div>
+
+          <div class="links">
+            <h6>Galeria de Imagenes</h6>
+            <a target="_blank" href="https://arturogm96.github.io/Galeria-De-Fotos/"><img class="img-project" src="./img//tributo.PNG" alt="Galeria de imagenes"></a>
+          </div>
+          
+          <div class="links">
+            <h6>Random Quotes</h6>
+            <a target="_blank" href="https://arturogm96.github.io/Random-Quotes/"><img class="img-project" src="./img/random.jpg" alt="Random Quotes"></a>
+          </div>
+          
         </div>
+      </div>
+
+      <div id="contact">
+        <h1><u>Contact</u></h1>
+        <div id="container-text-contact">
+          <h5>Let's keep in touch!</h5>
+          <i class="icon-forward"></i>
+        </div>
+        <div id="container-icon">
+          <a target="_blank" href="https://github.com/ArturoGm96"><i class="icon-github"></i></a>
+          <a target="_blank" href="mailto:arturo96gm@gmail.com"><i class="icon-mail"></i></a>
+          <a target="_blank" href="https://www.linkedin.com/in/arturo-granados-morales/"><i class="icon-linkedin"></i></a>
+        </div>
+      </div>
+    </div>
+    
 </body>
 </html>
